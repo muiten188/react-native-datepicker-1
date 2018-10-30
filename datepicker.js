@@ -307,12 +307,23 @@ class DatePicker extends Component {
       leftIconName,
       leftIconSize,
       leftIconColor,
-      leftIconStyle
+      leftIconStyle,
+      leftImageSource,
+      leftImageStyle
     } = this.props;
     const styleIcon = [{ marginLeft: 16 }, leftIconStyle]
     if (leftIconName) {
       return (
         <Icon style={styleIcon} name={leftIconName} size={leftIconSize || 24} color={leftIconColor || '#000'} />
+      )
+    }
+
+    if (leftImageSource) {
+      return (
+        <Image
+          style={[{ marginLeft: 16, marginRight: 2, width: 22, height: 22 }, leftImageStyle]}
+          source={leftImageSource}
+        />
       )
     }
 
