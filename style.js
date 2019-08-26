@@ -69,7 +69,7 @@ let style = StyleSheet.create({
     borderTopWidth: 1
   },
   disabled: {
-    backgroundColor: '#eee'
+    //backgroundColor: '#eee'
   }
 });
 
